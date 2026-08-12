@@ -1,0 +1,1234 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ahmadh H | Businessman &amp; Entrepreneur</title>
+    <meta name="description" content="Official portfolio of Ahmadh H, a motivated businessman interested in entrepreneurship, business development, professional growth, and creating new opportunities.">
+    
+    <!-- Open Graph Metadata -->
+    <meta property="og:title" content="Ahmadh H | Businessman &amp; Entrepreneur">
+    <meta property="og:description" content="An ambitious businessman focused on building opportunities, developing ideas, and growing through entrepreneurship.">
+    <meta property="og:type" content="website">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Plus Jakarta Sans', 'Inter', 'sans-serif'],
+                        display: ['Space Grotesk', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            50: '#FDFBF7',
+                            100: '#F7F2E7',
+                            200: '#EAD9C0',
+                            300: '#DCBF98',
+                            400: '#D4AF37', // Metallic Warm Gold
+                            500: '#C5A028',
+                            600: '#A3811C',
+                            700: '#7F6315',
+                            800: '#5A4610',
+                            900: '#382B0A',
+                        },
+                        dark: {
+                            bg: '#0B0E14',
+                            surface: '#121722',
+                            card: '#181F2E',
+                            border: 'rgba(212, 175, 55, 0.15)',
+                            borderLight: 'rgba(255, 255, 255, 0.08)',
+                        }
+                    },
+                    animation: {
+                        'pulse-slow': 'pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+                        'float': 'float 6s ease-in-out infinite',
+                        'glow': 'glow 3s ease-in-out infinite alternate',
+                    },
+                    keyframes: {
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0px)' },
+                            '50%': { transform: 'translateY(-12px)' },
+                        },
+                        glow: {
+                            '0%': { opacity: '0.4', filter: 'blur(20px)' },
+                            '100%': { opacity: '0.8', filter: 'blur(35px)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- Font Awesome Icons CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Custom Luxury Styling -->
+    <style>
+        /* Custom scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #0B0E14;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #181F2E;
+            border: 1px solid rgba(212, 175, 55, 0.2);
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #D4AF37;
+        }
+
+        /* Glassmorphism utilities */
+        .glass-card {
+            background: rgba(18, 23, 34, 0.7);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+        }
+
+        .glass-card-gold {
+            background: linear-gradient(135deg, rgba(24, 31, 46, 0.8) 0%, rgba(18, 23, 34, 0.9) 100%);
+            backdrop-filter: blur(16px);
+            border: 1px solid rgba(212, 175, 55, 0.25);
+            box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.5), 0 0 15px rgba(212, 175, 55, 0.05);
+        }
+
+        .glass-nav {
+            background: rgba(11, 14, 20, 0.85);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border-bottom: 1px solid rgba(212, 175, 55, 0.12);
+        }
+
+        /* Ambient grid pattern background */
+        .bg-grid-pattern {
+            background-size: 40px 40px;
+            background-image: 
+                linear-gradient(to right, rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+                linear-gradient(to bottom, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+        }
+
+        /* Metallic gold gradient text */
+        .text-gold-gradient {
+            background: linear-gradient(135deg, #FFF5D0 0%, #D4AF37 50%, #AA7C11 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .text-silver-gradient {
+            background: linear-gradient(135deg, #FFFFFF 0%, #CBD5E1 60%, #64748B 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        /* Spotlight glow effect on hover */
+        .spotlight-card {
+            position: relative;
+            overflow: hidden;
+        }
+        .spotlight-card::before {
+            content: '';
+            position: absolute;
+            top: var(--mouse-y, 0px);
+            left: var(--mouse-x, 0px);
+            transform: translate(-50%, -50%);
+            width: 300px;
+            height: 300px;
+            background: radial-gradient(circle, rgba(212, 175, 55, 0.15) 0%, transparent 70%);
+            opacity: 0;
+            transition: opacity 0.3s ease;
+            pointer-events: none;
+            border-radius: 50%;
+        }
+        .spotlight-card:hover::before {
+            opacity: 1;
+        }
+
+        /* Scroll reveal state */
+        .reveal-on-scroll {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        .reveal-on-scroll.is-visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* Sound visualizer wave bars */
+        .wave-bar {
+            animation: wave 1.2s ease-in-out infinite alternate;
+        }
+        @keyframes wave {
+            0% { height: 15%; }
+            100% { height: 100%; }
+        }
+
+        /* Reduced motion media query */
+        @media (prefers-reduced-motion: reduce) {
+            .reveal-on-scroll {
+                transition: none;
+                opacity: 1;
+                transform: none;
+            }
+            .animate-float, .wave-bar {
+                animation: none;
+            }
+        }
+    </style>
+</head>
+<body class="bg-dark-bg text-gray-200 font-sans selection:bg-brand-400 selection:text-black overflow-x-hidden relative">
+
+    <!-- Background Interactive Particle Canvas -->
+    <canvas id="bg-canvas" class="fixed inset-0 pointer-events-none z-0 opacity-40"></canvas>
+
+    <!-- Top Reading Progress Indicator -->
+    <div id="progress-bar" class="fixed top-0 left-0 h-[2px] bg-gradient-to-r from-brand-300 via-brand-400 to-amber-200 z-50 transition-all duration-150 w-0"></div>
+
+    <!-- STICKY NAVIGATION BAR -->
+    <header id="navbar" class="fixed top-0 left-0 w-full z-40 transition-all duration-300 glass-nav py-4">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between">
+            <!-- Brand Logo / Name -->
+            <a href="#home" class="group flex items-center gap-3 focus:outline-none focus:ring-2 focus:ring-brand-400 rounded-lg p-1">
+                <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-brand-400 to-brand-700 flex items-center justify-center font-display font-bold text-black text-xl shadow-lg shadow-brand-400/20 group-hover:scale-105 transition-transform">
+                    A
+                </div>
+                <div class="flex flex-col">
+                    <span class="font-display font-bold text-lg text-white tracking-wide group-hover:text-brand-400 transition-colors">Ahmadh H</span>
+                    <span class="text-[10px] tracking-widest text-brand-400 uppercase font-semibold">Businessman</span>
+                </div>
+            </a>
+
+            <!-- Desktop Navigation Links -->
+            <nav class="hidden lg:flex items-center gap-1 xl:gap-2">
+                <a href="#home" class="nav-link px-3 py-2 text-sm font-medium text-gray-300 hover:text-brand-400 transition-colors relative group">
+                    Home
+                    <span class="absolute bottom-0 left-1/2 w-0 h-[2px] bg-brand-400 group-hover:w-4/5 group-hover:left-[10%] transition-all duration-300"></span>
+                </a>
+                <a href="#about" class="nav-link px-3 py-2 text-sm font-medium text-gray-300 hover:text-brand-400 transition-colors relative group">
+                    About
+                    <span class="absolute bottom-0 left-1/2 w-0 h-[2px] bg-brand-400 group-hover:w-4/5 group-hover:left-[10%] transition-all duration-300"></span>
+                </a>
+                <a href="#experience" class="nav-link px-3 py-2 text-sm font-medium text-gray-300 hover:text-brand-400 transition-colors relative group">
+                    Experience
+                    <span class="absolute bottom-0 left-1/2 w-0 h-[2px] bg-brand-400 group-hover:w-4/5 group-hover:left-[10%] transition-all duration-300"></span>
+                </a>
+                <a href="#skills" class="nav-link px-3 py-2 text-sm font-medium text-gray-300 hover:text-brand-400 transition-colors relative group">
+                    Skills
+                    <span class="absolute bottom-0 left-1/2 w-0 h-[2px] bg-brand-400 group-hover:w-4/5 group-hover:left-[10%] transition-all duration-300"></span>
+                </a>
+                <a href="#strengths" class="nav-link px-3 py-2 text-sm font-medium text-gray-300 hover:text-brand-400 transition-colors relative group">
+                    Strengths
+                    <span class="absolute bottom-0 left-1/2 w-0 h-[2px] bg-brand-400 group-hover:w-4/5 group-hover:left-[10%] transition-all duration-300"></span>
+                </a>
+                <a href="#mindset" class="nav-link px-3 py-2 text-sm font-medium text-gray-300 hover:text-brand-400 transition-colors relative group">
+                    Mindset
+                    <span class="absolute bottom-0 left-1/2 w-0 h-[2px] bg-brand-400 group-hover:w-4/5 group-hover:left-[10%] transition-all duration-300"></span>
+                </a>
+                <a href="#beyond-business" class="nav-link px-3 py-2 text-sm font-medium text-gray-300 hover:text-brand-400 transition-colors relative group">
+                    Beyond Business
+                    <span class="absolute bottom-0 left-1/2 w-0 h-[2px] bg-brand-400 group-hover:w-4/5 group-hover:left-[10%] transition-all duration-300"></span>
+                </a>
+                <a href="#vision" class="nav-link px-3 py-2 text-sm font-medium text-gray-300 hover:text-brand-400 transition-colors relative group">
+                    Vision
+                    <span class="absolute bottom-0 left-1/2 w-0 h-[2px] bg-brand-400 group-hover:w-4/5 group-hover:left-[10%] transition-all duration-300"></span>
+                </a>
+            </nav>
+
+            <!-- Desktop Primary CTA button -->
+            <div class="hidden lg:block">
+                <a href="#contact" class="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-gradient-to-r from-brand-400 to-amber-500 text-black font-semibold text-sm shadow-md shadow-brand-400/20 hover:shadow-lg hover:shadow-brand-400/30 hover:scale-[1.02] active:scale-95 transition-all">
+                    <span>Let's Connect</span>
+                    <i class="fa-solid fa-arrow-right text-xs"></i>
+                </a>
+            </div>
+
+            <!-- Mobile Hamburger Toggle Button -->
+            <button id="mobile-menu-btn" type="button" aria-label="Toggle Navigation Menu" class="lg:hidden p-2 rounded-xl border border-dark-borderLight text-gray-300 hover:text-brand-400 hover:border-brand-400/50 focus:outline-none focus:ring-2 focus:ring-brand-400">
+                <i class="fa-solid fa-bars text-xl" id="menu-icon"></i>
+            </button>
+        </div>
+
+        <!-- Mobile Drawer Menu -->
+        <div id="mobile-menu" class="hidden lg:hidden glass-card border-b border-dark-border mt-3 px-6 py-6 space-y-4 max-h-[80vh] overflow-y-auto">
+            <a href="#home" class="mobile-nav-link block py-2 text-base font-medium text-gray-200 hover:text-brand-400 border-b border-white/5">Home</a>
+            <a href="#about" class="mobile-nav-link block py-2 text-base font-medium text-gray-200 hover:text-brand-400 border-b border-white/5">About Me</a>
+            <a href="#experience" class="mobile-nav-link block py-2 text-base font-medium text-gray-200 hover:text-brand-400 border-b border-white/5">Experience</a>
+            <a href="#skills" class="mobile-nav-link block py-2 text-base font-medium text-gray-200 hover:text-brand-400 border-b border-white/5">Skills</a>
+            <a href="#strengths" class="mobile-nav-link block py-2 text-base font-medium text-gray-200 hover:text-brand-400 border-b border-white/5">Core Strengths</a>
+            <a href="#mindset" class="mobile-nav-link block py-2 text-base font-medium text-gray-200 hover:text-brand-400 border-b border-white/5">Entrepreneurial Mindset</a>
+            <a href="#beyond-business" class="mobile-nav-link block py-2 text-base font-medium text-gray-200 hover:text-brand-400 border-b border-white/5">Beyond Business</a>
+            <a href="#vision" class="mobile-nav-link block py-2 text-base font-medium text-gray-200 hover:text-brand-400 border-b border-white/5">Future Vision</a>
+            <a href="#contact" class="mobile-nav-link block w-full text-center py-3 rounded-xl bg-gradient-to-r from-brand-400 to-amber-500 text-black font-semibold text-base shadow-lg shadow-brand-400/20 mt-4">Let's Connect</a>
+        </div>
+    </header>
+
+    <main class="relative z-10 pt-20">
+
+        <!-- 3. HERO SECTION -->
+        <section id="home" class="min-h-[calc(100vh-80px)] flex items-center justify-center relative overflow-hidden px-4 sm:px-6 lg:px-8 py-16 bg-grid-pattern">
+            <!-- Background Radial Glow Elements -->
+            <div class="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-brand-400/10 rounded-full blur-[120px] pointer-events-none animate-pulse-slow"></div>
+            <div class="absolute bottom-10 right-10 w-[350px] h-[350px] bg-amber-600/10 rounded-full blur-[100px] pointer-events-none"></div>
+
+            <div class="max-w-5xl mx-auto text-center relative z-10 flex flex-col items-center">
+                <!-- Badge -->
+                <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full glass-card border border-brand-400/30 text-brand-300 text-xs sm:text-sm font-medium tracking-wide mb-8 animate-float shadow-lg shadow-brand-400/5">
+                    <span class="w-2 h-2 rounded-full bg-brand-400 animate-ping"></span>
+                    <span>Building Ideas • Creating Opportunities • Growth Focused</span>
+                </div>
+
+                <!-- Main Name Display -->
+                <h1 class="font-display text-5xl sm:text-7xl lg:text-8xl font-extrabold tracking-tight text-white mb-6">
+                    Ahmadh <span class="text-gold-gradient">H</span>
+                </h1>
+
+                <!-- Professional Sub-Title -->
+                <p class="font-display text-xl sm:text-2xl lg:text-3xl font-semibold text-gray-300 tracking-wide mb-6">
+                    Businessman <span class="text-brand-400 mx-2">•</span> Entrepreneur <span class="text-brand-400 mx-2">•</span> Vision Builder
+                </p>
+
+                <!-- Supporting Hero Statement -->
+                <p class="max-w-2xl text-base sm:text-lg lg:text-xl text-gray-400 font-normal leading-relaxed mb-10 text-balance">
+                    “Building ideas, creating opportunities, and growing through entrepreneurship.”
+                </p>
+
+                <!-- Dual CTA Buttons -->
+                <div class="flex flex-col sm:flex-row items-center gap-4 sm:gap-6 w-full sm:w-auto">
+                    <a href="#about" class="w-full sm:w-auto px-8 py-4 rounded-xl bg-gradient-to-r from-brand-400 via-amber-400 to-amber-500 text-black font-bold text-base shadow-xl shadow-brand-400/20 hover:shadow-2xl hover:shadow-brand-400/30 hover:scale-[1.03] active:scale-95 transition-all text-center flex items-center justify-center gap-3 group">
+                        <span>Explore My Journey</span>
+                        <i class="fa-solid fa-compass group-hover:rotate-45 transition-transform duration-300"></i>
+                    </a>
+                    <a href="#contact" class="w-full sm:w-auto px-8 py-4 rounded-xl glass-card border border-brand-400/40 text-white font-semibold text-base hover:bg-brand-400/10 hover:border-brand-400 hover:scale-[1.03] active:scale-95 transition-all text-center flex items-center justify-center gap-3">
+                        <span>Let's Connect</span>
+                        <i class="fa-solid fa-paper-plane text-brand-400"></i>
+                    </a>
+                </div>
+
+                <!-- Hero Key Highlights Bar -->
+                <div class="mt-16 grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-8 w-full max-w-4xl border-t border-white/10 pt-8">
+                    <div class="flex flex-col items-center p-3">
+                        <span class="font-display text-2xl sm:text-3xl font-bold text-brand-400">Strategic</span>
+                        <span class="text-xs text-gray-400 uppercase tracking-widest mt-1">Decision Making</span>
+                    </div>
+                    <div class="flex flex-col items-center p-3">
+                        <span class="font-display text-2xl sm:text-3xl font-bold text-brand-400">Growth</span>
+                        <span class="text-xs text-gray-400 uppercase tracking-widest mt-1">Oriented Mindset</span>
+                    </div>
+                    <div class="flex flex-col items-center p-3">
+                        <span class="font-display text-2xl sm:text-3xl font-bold text-brand-400">Dynamic</span>
+                        <span class="text-xs text-gray-400 uppercase tracking-widest mt-1">Communication</span>
+                    </div>
+                    <div class="flex flex-col items-center p-3">
+                        <span class="font-display text-2xl sm:text-3xl font-bold text-brand-400">Venture</span>
+                        <span class="text-xs text-gray-400 uppercase tracking-widest mt-1">Development</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. ABOUT SECTION -->
+        <section id="about" class="py-24 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto relative reveal-on-scroll">
+            <div class="flex flex-col md:flex-row items-start justify-between gap-12">
+                <!-- Section Title & Badge -->
+                <div class="w-full md:w-1/3">
+                    <div class="sticky top-28">
+                        <div class="inline-flex items-center gap-2 text-brand-400 font-semibold text-xs tracking-widest uppercase mb-3">
+                            <i class="fa-solid fa-user-check"></i>
+                            <span>Identity &amp; Vision</span>
+                        </div>
+                        <h2 class="font-display text-4xl sm:text-5xl font-extrabold text-white tracking-tight mb-4">
+                            About Me
+                        </h2>
+                        <div class="h-1 w-20 bg-gradient-to-r from-brand-400 to-transparent rounded-full mb-6"></div>
+                        <p class="text-sm text-gray-400 leading-relaxed">
+                            Driven by continuous self-improvement, market intuition, and a passion for turning ideas into actionable ventures.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Main About Cards Content -->
+                <div class="w-full md:w-2/3 space-y-6">
+                    <!-- Featured Statement Card -->
+                    <div class="glass-card-gold p-8 rounded-2xl relative overflow-hidden spotlight-card">
+                        <i class="fa-solid fa-quote-left text-4xl text-brand-400/20 absolute top-6 right-6"></i>
+                        <p class="font-display text-xl sm:text-2xl text-gray-100 font-semibold leading-snug mb-4">
+                            “I’m an ambitious businessman driven by ideas, opportunities, and continuous growth. I’m passionate about developing business concepts, building strong professional relationships, and turning opportunities into meaningful ventures.”
+                        </p>
+                        <div class="flex items-center gap-3 pt-4 border-t border-brand-400/20">
+                            <div class="w-8 h-8 rounded-full bg-brand-400/20 flex items-center justify-center text-brand-400 font-bold text-xs">
+                                AH
+                            </div>
+                            <div>
+                                <h4 class="text-sm font-bold text-white">Ahmadh H</h4>
+                                <p class="text-xs text-brand-300">Businessman &amp; Entrepreneur</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Detail Grid -->
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                        <!-- Profile Focus Card 1 -->
+                        <div class="glass-card p-6 rounded-2xl border border-dark-border hover:border-brand-400/40 transition-colors spotlight-card">
+                            <div class="w-12 h-12 rounded-xl bg-brand-400/10 flex items-center justify-center text-brand-400 text-xl mb-4">
+                                <i class="fa-solid fa-chart-line"></i>
+                            </div>
+                            <h3 class="font-display text-lg font-bold text-white mb-2">Business Development</h3>
+                            <p class="text-sm text-gray-400 leading-relaxed">
+                                Motivated individual focused on identifying business trends, conceptualizing models, and evaluating opportunities for sustainable growth.
+                            </p>
+                        </div>
+
+                        <!-- Profile Focus Card 2 -->
+                        <div class="glass-card p-6 rounded-2xl border border-dark-border hover:border-brand-400/40 transition-colors spotlight-card">
+                            <div class="w-12 h-12 rounded-xl bg-brand-400/10 flex items-center justify-center text-brand-400 text-xl mb-4">
+                                <i class="fa-solid fa-handshake"></i>
+                            </div>
+                            <h3 class="font-display text-lg font-bold text-white mb-2">Professional Relationships</h3>
+                            <p class="text-sm text-gray-400 leading-relaxed">
+                                Deep commitment to building high-trust professional networks, effective communication, and win-win collaborative partnerships.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 5. BUSINESS EXPERIENCE -->
+        <section id="experience" class="py-24 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto relative reveal-on-scroll">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <div class="inline-flex items-center gap-2 text-brand-400 font-semibold text-xs tracking-widest uppercase mb-3">
+                    <i class="fa-solid fa-briefcase"></i>
+                    <span>Professional Trajectory</span>
+                </div>
+                <h2 class="font-display text-4xl sm:text-5xl font-extrabold text-white tracking-tight mb-4">
+                    Business Experience
+                </h2>
+                <p class="text-gray-400 text-base">
+                    Active engagement in business operations, customer relations, and strategic decision-making.
+                </p>
+            </div>
+
+            <!-- Single Premium Timeline Item -->
+            <div class="max-w-4xl mx-auto">
+                <div class="relative pl-6 sm:pl-10 border-l-2 border-brand-400/30 space-y-12">
+                    
+                    <!-- Timeline Node -->
+                    <div class="relative group">
+                        <!-- Pulse Dot on Line -->
+                        <div class="absolute -left-[31px] sm:-left-[47px] top-0 w-6 h-6 rounded-full bg-dark-bg border-2 border-brand-400 flex items-center justify-center group-hover:scale-125 transition-transform bg-brand-400/20">
+                            <div class="w-2 h-2 rounded-full bg-brand-400"></div>
+                        </div>
+
+                        <!-- Timeline Card Content -->
+                        <div class="glass-card-gold p-8 rounded-2xl relative transition-all duration-300 hover:translate-x-2">
+                            <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 mb-6">
+                                <div>
+                                    <span class="inline-block px-3 py-1 rounded-full bg-brand-400/10 text-brand-300 text-xs font-semibold tracking-wider uppercase mb-2">
+                                        Present
+                                    </span>
+                                    <h3 class="font-display text-2xl font-bold text-white">Businessman</h3>
+                                </div>
+                                <div class="flex items-center gap-2 text-gray-400 text-xs sm:text-sm font-medium">
+                                    <i class="fa-solid fa-building-columns text-brand-400"></i>
+                                    <span>Entrepreneurial Practice</span>
+                                </div>
+                            </div>
+
+                            <!-- Experience Narrative Points -->
+                            <div class="space-y-4">
+                                <div class="flex items-start gap-4">
+                                    <div class="w-8 h-8 rounded-lg bg-brand-400/10 flex items-center justify-center text-brand-400 shrink-0 mt-0.5">
+                                        <i class="fa-solid fa-chart-pie text-sm"></i>
+                                    </div>
+                                    <p class="text-gray-300 text-sm sm:text-base leading-relaxed">
+                                        Managing and developing business activities with a focus on growth, customer relationships, communication, and effective decision-making.
+                                    </p>
+                                </div>
+
+                                <div class="flex items-start gap-4">
+                                    <div class="w-8 h-8 rounded-lg bg-brand-400/10 flex items-center justify-center text-brand-400 shrink-0 mt-0.5">
+                                        <i class="fa-solid fa-lightbulb text-sm"></i>
+                                    </div>
+                                    <p class="text-gray-300 text-sm sm:text-base leading-relaxed">
+                                        Developing business ideas, identifying opportunities, and working towards long-term professional and entrepreneurial goals.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <!-- Growth Indicators Bar -->
+                            <div class="mt-8 pt-6 border-t border-white/10 grid grid-cols-1 sm:grid-cols-3 gap-4">
+                                <div class="flex items-center gap-3">
+                                    <i class="fa-solid fa-users text-brand-400"></i>
+                                    <span class="text-xs text-gray-300 font-medium">Customer Focus</span>
+                                </div>
+                                <div class="flex items-center gap-3">
+                                    <i class="fa-solid fa-bullseye text-brand-400"></i>
+                                    <span class="text-xs text-gray-300 font-medium">Goal Alignment</span>
+                                </div>
+                                <div class="flex items-center gap-3">
+                                    <i class="fa-solid fa-comments text-brand-400"></i>
+                                    <span class="text-xs text-gray-300 font-medium">Active Communication</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- 6. SKILLS SECTION -->
+        <section id="skills" class="py-24 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto relative reveal-on-scroll">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <div class="inline-flex items-center gap-2 text-brand-400 font-semibold text-xs tracking-widest uppercase mb-3">
+                    <i class="fa-solid fa-layer-group"></i>
+                    <span>Capabilities</span>
+                </div>
+                <h2 class="font-display text-4xl sm:text-5xl font-extrabold text-white tracking-tight mb-4">
+                    Professional Skills
+                </h2>
+                <p class="text-gray-400 text-base">
+                    Qualitative core competencies driving business strategy and collaborative execution.
+                </p>
+            </div>
+
+            <!-- Skills Grid with Interactive Glow Cards -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                
+                <!-- Skill 1: Business Management -->
+                <div class="glass-card p-6 rounded-2xl border border-dark-border hover:border-brand-400/50 transition-all group spotlight-card">
+                    <div class="flex items-center justify-between mb-4">
+                        <div class="w-12 h-12 rounded-xl bg-brand-400/10 flex items-center justify-center text-brand-400 text-xl group-hover:bg-brand-400 group-hover:text-black transition-colors">
+                            <i class="fa-solid fa-sliders"></i>
+                        </div>
+                        <span class="px-3 py-1 rounded-full bg-white/5 text-brand-300 text-xs font-semibold">Strategic</span>
+                    </div>
+                    <h3 class="font-display text-xl font-bold text-white mb-2">Business Management</h3>
+                    <p class="text-sm text-gray-400 leading-relaxed">
+                        Focus on organization, structured planning, business activity management, and strategic growth.
+                    </p>
+                </div>
+
+                <!-- Skill 2: Communication -->
+                <div class="glass-card p-6 rounded-2xl border border-dark-border hover:border-brand-400/50 transition-all group spotlight-card">
+                    <div class="flex items-center justify-between mb-4">
+                        <div class="w-12 h-12 rounded-xl bg-brand-400/10 flex items-center justify-center text-brand-400 text-xl group-hover:bg-brand-400 group-hover:text-black transition-colors">
+                            <i class="fa-solid fa-comments"></i>
+                        </div>
+                        <span class="px-3 py-1 rounded-full bg-white/5 text-brand-300 text-xs font-semibold">Interpersonal</span>
+                    </div>
+                    <h3 class="font-display text-xl font-bold text-white mb-2">Communication</h3>
+                    <p class="text-sm text-gray-400 leading-relaxed">
+                        Professional communication, active listening, and building sustainable business relationships.
+                    </p>
+                </div>
+
+                <!-- Skill 3: Leadership -->
+                <div class="glass-card p-6 rounded-2xl border border-dark-border hover:border-brand-400/50 transition-all group spotlight-card">
+                    <div class="flex items-center justify-between mb-4">
+                        <div class="w-12 h-12 rounded-xl bg-brand-400/10 flex items-center justify-center text-brand-400 text-xl group-hover:bg-brand-400 group-hover:text-black transition-colors">
+                            <i class="fa-solid fa-crown"></i>
+                        </div>
+                        <span class="px-3 py-1 rounded-full bg-white/5 text-brand-300 text-xs font-semibold">Directional</span>
+                    </div>
+                    <h3 class="font-display text-xl font-bold text-white mb-2">Leadership</h3>
+                    <p class="text-sm text-gray-400 leading-relaxed">
+                        Leading initiatives, inspiring vision, facilitating teamwork, and moving decisively toward goals.
+                    </p>
+                </div>
+
+                <!-- Skill 4: Team Collaboration -->
+                <div class="glass-card p-6 rounded-2xl border border-dark-border hover:border-brand-400/50 transition-all group spotlight-card">
+                    <div class="flex items-center justify-between mb-4">
+                        <div class="w-12 h-12 rounded-xl bg-brand-400/10 flex items-center justify-center text-brand-400 text-xl group-hover:bg-brand-400 group-hover:text-black transition-colors">
+                            <i class="fa-solid fa-people-group"></i>
+                        </div>
+                        <span class="px-3 py-1 rounded-full bg-white/5 text-brand-300 text-xs font-semibold">Synergy</span>
+                    </div>
+                    <h3 class="font-display text-xl font-bold text-white mb-2">Team Collaboration</h3>
+                    <p class="text-sm text-gray-400 leading-relaxed">
+                        Working effectively across diverse team dynamics to maximize combined output and constructive problem-solving.
+                    </p>
+                </div>
+
+                <!-- Skill 5: Decision Making -->
+                <div class="glass-card p-6 rounded-2xl border border-dark-border hover:border-brand-400/50 transition-all group spotlight-card">
+                    <div class="flex items-center justify-between mb-4">
+                        <div class="w-12 h-12 rounded-xl bg-brand-400/10 flex items-center justify-center text-brand-400 text-xl group-hover:bg-brand-400 group-hover:text-black transition-colors">
+                            <i class="fa-solid fa-[#000]">
+                                <i class="fa-solid fa-scale-balanced"></i>
+                            </i>
+                        </div>
+                        <span class="px-3 py-1 rounded-full bg-white/5 text-brand-300 text-xs font-semibold">Analytical</span>
+                    </div>
+                    <h3 class="font-display text-xl font-bold text-white mb-2">Decision Making</h3>
+                    <p class="text-sm text-gray-400 leading-relaxed">
+                        Evaluating market opportunities, analyzing tradeoffs, and executing practical, high-impact decisions.
+                    </p>
+                </div>
+
+                <!-- Skill 6: Entrepreneurship -->
+                <div class="glass-card p-6 rounded-2xl border border-dark-border hover:border-brand-400/50 transition-all group spotlight-card">
+                    <div class="flex items-center justify-between mb-4">
+                        <div class="w-12 h-12 rounded-xl bg-brand-400/10 flex items-center justify-center text-brand-400 text-xl group-hover:bg-brand-400 group-hover:text-black transition-colors">
+                            <i class="fa-solid fa-rocket"></i>
+                        </div>
+                        <span class="px-3 py-1 rounded-full bg-white/5 text-brand-300 text-xs font-semibold">Foundational</span>
+                    </div>
+                    <h3 class="font-display text-xl font-bold text-white mb-2">Entrepreneurship</h3>
+                    <p class="text-sm text-gray-400 leading-relaxed">
+                        Developing fresh concepts, identifying high-potential market gaps, and aggressively pursuing viable business opportunities.
+                    </p>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- 7. CORE STRENGTHS -->
+        <section id="strengths" class="py-24 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto relative reveal-on-scroll">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <div class="inline-flex items-center gap-2 text-brand-400 font-semibold text-xs tracking-widest uppercase mb-3">
+                    <i class="fa-solid fa-bolt"></i>
+                    <span>Internal Attributes</span>
+                </div>
+                <h2 class="font-display text-4xl sm:text-5xl font-extrabold text-white tracking-tight mb-4">
+                    What Drives Me
+                </h2>
+                <p class="text-gray-400 text-base">
+                    Core behavioral and intellectual strengths that underpin daily actions and long-term execution.
+                </p>
+            </div>
+
+            <!-- 6 Interactive Strengths Cards -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                
+                <!-- Strength 1 -->
+                <div class="glass-card p-6 rounded-2xl border border-white/5 hover:border-brand-400/40 hover:-translate-y-1 transition-all spotlight-card">
+                    <div class="w-10 h-10 rounded-lg bg-brand-400/10 text-brand-400 flex items-center justify-center text-lg mb-4">
+                        <i class="fa-solid fa-brain"></i>
+                    </div>
+                    <h3 class="font-display text-lg font-bold text-white mb-2">Entrepreneurial Mindset</h3>
+                    <p class="text-sm text-gray-400 leading-relaxed">
+                        Possesses an innate drive to discover potential, innovate existing processes, and build business value.
+                    </p>
+                </div>
+
+                <!-- Strength 2 -->
+                <div class="glass-card p-6 rounded-2xl border border-white/5 hover:border-brand-400/40 hover:-translate-y-1 transition-all spotlight-card">
+                    <div class="w-10 h-10 rounded-lg bg-brand-400/10 text-brand-400 flex items-center justify-center text-lg mb-4">
+                        <i class="fa-solid fa-people-line"></i>
+                    </div>
+                    <h3 class="font-display text-lg font-bold text-white mb-2">Leadership &amp; Teamwork</h3>
+                    <p class="text-sm text-gray-400 leading-relaxed">
+                        Balances decisive personal initiative with strong empathy and commitment to group achievement.
+                    </p>
+                </div>
+
+                <!-- Strength 3 -->
+                <div class="glass-card p-6 rounded-2xl border border-white/5 hover:border-brand-400/40 hover:-translate-y-1 transition-all spotlight-card">
+                    <div class="w-10 h-10 rounded-lg bg-brand-400/10 text-brand-400 flex items-center justify-center text-lg mb-4">
+                        <i class="fa-solid fa-bullhorn"></i>
+                    </div>
+                    <h3 class="font-display text-lg font-bold text-white mb-2">Strong Communication</h3>
+                    <p class="text-sm text-gray-400 leading-relaxed">
+                        Articulates business goals with clarity and confidence across internal and external stakeholder interactions.
+                    </p>
+                </div>
+
+                <!-- Strength 4 -->
+                <div class="glass-card p-6 rounded-2xl border border-white/5 hover:border-brand-400/40 hover:-translate-y-1 transition-all spotlight-card">
+                    <div class="w-10 h-10 rounded-lg bg-brand-400/10 text-brand-400 flex items-center justify-center text-lg mb-4">
+                        <i class="fa-solid fa-arrows-rotate"></i>
+                    </div>
+                    <h3 class="font-display text-lg font-bold text-white mb-2">Adaptability &amp; Learning</h3>
+                    <p class="text-sm text-gray-400 leading-relaxed">
+                        Quick to learn, eager to absorb new knowledge, and agile in response to changing environments.
+                    </p>
+                </div>
+
+                <!-- Strength 5 -->
+                <div class="glass-card p-6 rounded-2xl border border-white/5 hover:border-brand-400/40 hover:-translate-y-1 transition-all spotlight-card">
+                    <div class="w-10 h-10 rounded-lg bg-brand-400/10 text-brand-400 flex items-center justify-center text-lg mb-4">
+                        <i class="fa-solid fa-puzzle-piece"></i>
+                    </div>
+                    <h3 class="font-display text-lg font-bold text-white mb-2">Problem Solving</h3>
+                    <p class="text-sm text-gray-400 leading-relaxed">
+                        Approaches business bottlenecks with analytical clarity and practical resolution strategies.
+                    </p>
+                </div>
+
+                <!-- Strength 6 -->
+                <div class="glass-card p-6 rounded-2xl border border-white/5 hover:border-brand-400/40 hover:-translate-y-1 transition-all spotlight-card">
+                    <div class="w-10 h-10 rounded-lg bg-brand-400/10 text-brand-400 flex items-center justify-center text-lg mb-4">
+                        <i class="fa-solid fa-bullseye"></i>
+                    </div>
+                    <h3 class="font-display text-lg font-bold text-white mb-2">Goal-Oriented Approach</h3>
+                    <p class="text-sm text-gray-400 leading-relaxed">
+                        Maintains relentless focus on defining clear objectives and executing consistent efforts toward long-term targets.
+                    </p>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- 8. ENTREPRENEURIAL MINDSET SECTION -->
+        <section id="mindset" class="py-24 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto relative reveal-on-scroll">
+            <div class="glass-card-gold p-8 sm:p-12 rounded-3xl relative overflow-hidden">
+                
+                <div class="max-w-3xl mb-12">
+                    <div class="inline-flex items-center gap-2 text-brand-400 font-semibold text-xs tracking-widest uppercase mb-3">
+                        <i class="fa-solid fa-compass-drafting"></i>
+                        <span>Personal Philosophy</span>
+                    </div>
+                    <h2 class="font-display text-4xl sm:text-5xl font-extrabold text-white tracking-tight mb-4">
+                        The Four Pillars of My Journey
+                    </h2>
+                    <p class="text-gray-300 text-base leading-relaxed">
+                        A clear strategic foundation designed to guide decisions, nurture networks, and engineer sustainable business success.
+                    </p>
+                </div>
+
+                <!-- 4 Pillars Grid -->
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                    
+                    <!-- Pillar 1 -->
+                    <div class="glass-card p-6 rounded-2xl border border-white/10 relative">
+                        <span class="font-display font-black text-4xl text-brand-400/20 absolute top-4 right-4">01</span>
+                        <div class="text-brand-400 text-2xl mb-4">
+                            <i class="fa-solid fa-lightbulb"></i>
+                        </div>
+                        <h3 class="font-display text-xl font-bold text-white mb-2">Ideas</h3>
+                        <p class="text-xs sm:text-sm text-gray-400 leading-relaxed">
+                            Always looking for new concepts, creative approaches, and untapped business possibilities.
+                        </p>
+                    </div>
+
+                    <!-- Pillar 2 -->
+                    <div class="glass-card p-6 rounded-2xl border border-white/10 relative">
+                        <span class="font-display font-black text-4xl text-brand-400/20 absolute top-4 right-4">02</span>
+                        <div class="text-brand-400 text-2xl mb-4">
+                            <i class="fa-solid fa-magnifying-glass-chart"></i>
+                        </div>
+                        <h3 class="font-display text-xl font-bold text-white mb-2">Opportunities</h3>
+                        <p class="text-xs sm:text-sm text-gray-400 leading-relaxed">
+                            Proactively identifying opportunities for immediate execution and long-term professional growth.
+                        </p>
+                    </div>
+
+                    <!-- Pillar 3 -->
+                    <div class="glass-card p-6 rounded-2xl border border-white/10 relative">
+                        <span class="font-display font-black text-4xl text-brand-400/20 absolute top-4 right-4">03</span>
+                        <div class="text-brand-400 text-2xl mb-4">
+                            <i class="fa-solid fa-network-wired"></i>
+                        </div>
+                        <h3 class="font-display text-xl font-bold text-white mb-2">Relationships</h3>
+                        <p class="text-xs sm:text-sm text-gray-400 leading-relaxed">
+                            Building meaningful, trust-driven professional relationships that foster mutual advancement.
+                        </p>
+                    </div>
+
+                    <!-- Pillar 4 -->
+                    <div class="glass-card p-6 rounded-2xl border border-white/10 relative">
+                        <span class="font-display font-black text-4xl text-brand-400/20 absolute top-4 right-4">04</span>
+                        <div class="text-brand-400 text-2xl mb-4">
+                            <i class="fa-solid fa-seedling"></i>
+                        </div>
+                        <h3 class="font-display text-xl font-bold text-white mb-2">Growth</h3>
+                        <p class="text-xs sm:text-sm text-gray-400 leading-relaxed">
+                            Continuously learning, adapting to market shifts, and striving toward ambitious targets.
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- 9. PERSONAL SIDE / HOBBY (BEYOND BUSINESS) -->
+        <section id="beyond-business" class="py-24 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto relative reveal-on-scroll">
+            <div class="glass-card p-8 sm:p-12 rounded-3xl border border-dark-border relative overflow-hidden">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                    
+                    <div>
+                        <div class="inline-flex items-center gap-2 text-brand-400 font-semibold text-xs tracking-widest uppercase mb-3">
+                            <i class="fa-solid fa-music"></i>
+                            <span>Personal Dimension</span>
+                        </div>
+                        <h2 class="font-display text-3xl sm:text-4xl font-extrabold text-white tracking-tight mb-4">
+                            Beyond Business
+                        </h2>
+                        <p class="text-gray-300 text-base leading-relaxed mb-6">
+                            While business and entrepreneurship drive my professional ambition, creative balance plays a key role in personal well-being and mindset clarity.
+                        </p>
+
+                        <!-- Singing Feature Highlight -->
+                        <div class="flex items-start gap-4 p-5 rounded-2xl bg-white/5 border border-white/10">
+                            <div class="w-12 h-12 rounded-xl bg-gradient-to-br from-brand-400 to-amber-600 flex items-center justify-center text-black font-bold text-xl shrink-0">
+                                <i class="fa-solid fa-microphone-lines"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-display text-lg font-bold text-white mb-1">Singing</h3>
+                                <p class="text-sm text-gray-400 leading-relaxed">
+                                    “Enjoys singing as a creative and personal hobby.”
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Interactive Frequency Waveform Visualizer Element -->
+                    <div class="flex flex-col items-center justify-center p-8 rounded-2xl bg-dark-bg/80 border border-brand-400/20 text-center">
+                        <div class="text-xs text-brand-300 uppercase tracking-widest font-semibold mb-6">
+                            Creative Expression • Resonance
+                        </div>
+
+                        <!-- Animated Waveform Visualizer -->
+                        <div id="audio-wave-container" class="flex items-end justify-center gap-1.5 h-24 w-full max-w-xs mb-6 px-4 py-2 cursor-pointer group" title="Click to trigger interactive audio rhythm">
+                            <div class="wave-bar w-2 bg-brand-400 rounded-full h-1/2 group-hover:bg-amber-300"></div>
+                            <div class="wave-bar w-2 bg-brand-400 rounded-full h-3/4 group-hover:bg-amber-300" style="animation-delay: 0.2s"></div>
+                            <div class="wave-bar w-2 bg-brand-400 rounded-full h-1/3 group-hover:bg-amber-300" style="animation-delay: 0.4s"></div>
+                            <div class="wave-bar w-2 bg-brand-400 rounded-full h-full group-hover:bg-amber-300" style="animation-delay: 0.1s"></div>
+                            <div class="wave-bar w-2 bg-brand-400 rounded-full h-2/3 group-hover:bg-amber-300" style="animation-delay: 0.3s"></div>
+                            <div class="wave-bar w-2 bg-brand-400 rounded-full h-4/5 group-hover:bg-amber-300" style="animation-delay: 0.5s"></div>
+                            <div class="wave-bar w-2 bg-brand-400 rounded-full h-2/5 group-hover:bg-amber-300" style="animation-delay: 0.25s"></div>
+                            <div class="wave-bar w-2 bg-brand-400 rounded-full h-3/5 group-hover:bg-amber-300" style="animation-delay: 0.15s"></div>
+                        </div>
+
+                        <button id="synth-sound-btn" type="button" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg text-xs font-semibold bg-white/5 border border-brand-400/30 text-brand-300 hover:bg-brand-400/20 hover:text-white transition-all">
+                            <i class="fa-solid fa-volume-high text-brand-400"></i>
+                            <span>Tap to Play Melody Sound</span>
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- 10. FUTURE VISION -->
+        <section id="vision" class="py-24 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto relative reveal-on-scroll">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <div class="inline-flex items-center gap-2 text-brand-400 font-semibold text-xs tracking-widest uppercase mb-3">
+                    <i class="fa-solid fa-eye"></i>
+                    <span>Forward Horizon</span>
+                </div>
+                <h2 class="font-display text-4xl sm:text-5xl font-extrabold text-white tracking-tight mb-4">
+                    Building What's Next
+                </h2>
+                <p class="text-gray-400 text-base">
+                    Focused on long-term strategy, venture expansion, and impactful entrepreneurship.
+                </p>
+            </div>
+
+            <!-- Vision Cards Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                
+                <!-- Vision Item 1 -->
+                <div class="glass-card p-8 rounded-2xl border border-white/10 hover:border-brand-400/40 transition-all spotlight-card flex flex-col justify-between">
+                    <div>
+                        <div class="w-12 h-12 rounded-xl bg-brand-400/10 flex items-center justify-center text-brand-400 text-xl mb-6">
+                            <i class="fa-solid fa-diagram-project"></i>
+                        </div>
+                        <h3 class="font-display text-xl font-bold text-white mb-3">Venture Exploration</h3>
+                        <p class="text-sm text-gray-400 leading-relaxed mb-6">
+                            Continuously researching emerging business domains and developing foundational business concepts designed for sustainable growth.
+                        </p>
+                    </div>
+                    <div class="flex items-center gap-2 text-xs font-semibold text-brand-400">
+                        <span>Initiatives in progress</span>
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+                </div>
+
+                <!-- Vision Item 2 -->
+                <div class="glass-card p-8 rounded-2xl border border-white/10 hover:border-brand-400/40 transition-all spotlight-card flex flex-col justify-between">
+                    <div>
+                        <div class="w-12 h-12 rounded-xl bg-brand-400/10 flex items-center justify-center text-brand-400 text-xl mb-6">
+                            <i class="fa-solid fa-handshake-angle"></i>
+                        </div>
+                        <h3 class="font-display text-xl font-bold text-white mb-3">Strategic Synergy</h3>
+                        <p class="text-sm text-gray-400 leading-relaxed mb-6">
+                            Forging connections with like-minded entrepreneurs, advisors, and business professionals to co-create value.
+                        </p>
+                    </div>
+                    <div class="flex items-center gap-2 text-xs font-semibold text-brand-400">
+                        <span>Network expansion</span>
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+                </div>
+
+                <!-- Vision Item 3 -->
+                <div class="glass-card p-8 rounded-2xl border border-white/10 hover:border-brand-400/40 transition-all spotlight-card flex flex-col justify-between">
+                    <div>
+                        <div class="w-12 h-12 rounded-xl bg-brand-400/10 flex items-center justify-center text-brand-400 text-xl mb-6">
+                            <i class="fa-solid fa-chart-line"></i>
+                        </div>
+                        <h3 class="font-display text-xl font-bold text-white mb-3">Sustainable Execution</h3>
+                        <p class="text-sm text-gray-400 leading-relaxed mb-6">
+                            Building long-term momentum through structured decision-making, operational excellence, and adaptable strategy.
+                        </p>
+                    </div>
+                    <div class="flex items-center gap-2 text-xs font-semibold text-brand-400">
+                        <span>Goal alignment</span>
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- 11. CONTACT / CONNECT SECTION -->
+        <section id="contact" class="py-24 px-4 sm:px-6 lg:px-8 max-w-5xl mx-auto relative reveal-on-scroll">
+            <div class="glass-card-gold p-8 sm:p-14 rounded-3xl text-center relative overflow-hidden">
+                <div class="absolute -top-24 -right-24 w-64 h-64 bg-brand-400/20 rounded-full blur-3xl pointer-events-none"></div>
+
+                <div class="max-w-2xl mx-auto relative z-10">
+                    <span class="inline-block px-4 py-1.5 rounded-full bg-brand-400/10 text-brand-300 text-xs font-bold tracking-widest uppercase mb-4">
+                        Connect &amp; Collaborate
+                    </span>
+                    <h2 class="font-display text-3xl sm:text-5xl font-extrabold text-white tracking-tight mb-6">
+                        Let's Build Something Meaningful
+                    </h2>
+                    <p class="text-base sm:text-lg text-gray-300 leading-relaxed mb-8">
+                        Interested in business, entrepreneurship, collaboration, or new opportunities? Let's connect.
+                    </p>
+
+                    <!-- Contact Details / Placeholders Box -->
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 max-w-xl mx-auto mb-10 text-left">
+                        <div class="p-4 rounded-xl bg-dark-bg/60 border border-white/10 flex items-center gap-3">
+                            <div class="w-10 h-10 rounded-lg bg-brand-400/20 flex items-center justify-center text-brand-400 shrink-0">
+                                <i class="fa-solid fa-envelope"></i>
+                            </div>
+                            <div class="overflow-hidden">
+                                <span class="block text-[10px] text-gray-400 uppercase tracking-widest">Direct Contact</span>
+                                <span id="contact-email-placeholder" class="text-xs sm:text-sm text-gray-200 font-medium truncate block">contact@ahmadhh.com</span>
+                            </div>
+                        </div>
+
+                        <div class="p-4 rounded-xl bg-dark-bg/60 border border-white/10 flex items-center gap-3">
+                            <div class="w-10 h-10 rounded-lg bg-brand-400/20 flex items-center justify-center text-brand-400 shrink-0">
+                                <i class="fa-solid fa-location-dot"></i>
+                            </div>
+                            <div>
+                                <span class="block text-[10px] text-gray-400 uppercase tracking-widest">Base Location</span>
+                                <span class="text-xs sm:text-sm text-gray-200 font-medium block">Open to Global Opportunities</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Interactive Connect CTA Modal Opener -->
+                    <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+                        <button id="open-contact-modal" type="button" class="w-full sm:w-auto px-8 py-4 rounded-xl bg-gradient-to-r from-brand-400 via-amber-400 to-amber-500 text-black font-bold text-base shadow-xl shadow-brand-400/20 hover:scale-[1.03] active:scale-95 transition-all flex items-center justify-center gap-3">
+                            <span>Send a Message</span>
+                            <i class="fa-solid fa-paper-plane"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Interactive Contact Form Modal -->
+    <div id="contact-modal" class="fixed inset-0 z-50 flex items-center justify-center px-4 bg-black/80 backdrop-blur-md opacity-0 pointer-events-none transition-opacity duration-300">
+        <div class="glass-card-gold p-8 rounded-3xl max-w-lg w-full relative transform scale-95 transition-transform duration-300" id="modal-container">
+            <button id="close-modal" type="button" aria-label="Close dialog" class="absolute top-6 right-6 text-gray-400 hover:text-white text-xl">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+
+            <h3 class="font-display text-2xl font-bold text-white mb-2">Connect with Ahmadh H</h3>
+            <p class="text-xs text-gray-400 mb-6">Fill out your details below to initiate a business discussion or venture collaboration.</p>
+
+            <form id="connect-form" class="space-y-4">
+                <div>
+                    <label for="form-name" class="block text-xs font-semibold text-gray-300 uppercase tracking-wider mb-1">Your Name</label>
+                    <input type="text" id="form-name" required placeholder="John Doe" class="w-full px-4 py-3 rounded-xl bg-dark-bg border border-white/10 text-white placeholder-gray-500 text-sm focus:outline-none focus:border-brand-400 transition-colors">
+                </div>
+                <div>
+                    <label for="form-email" class="block text-xs font-semibold text-gray-300 uppercase tracking-wider mb-1">Your Email</label>
+                    <input type="email" id="form-email" required placeholder="john@example.com" class="w-full px-4 py-3 rounded-xl bg-dark-bg border border-white/10 text-white placeholder-gray-500 text-sm focus:outline-none focus:border-brand-400 transition-colors">
+                </div>
+                <div>
+                    <label for="form-message" class="block text-xs font-semibold text-gray-300 uppercase tracking-wider mb-1">Message / Business Topic</label>
+                    <textarea id="form-message" rows="4" required placeholder="I'd like to discuss potential business opportunities..." class="w-full px-4 py-3 rounded-xl bg-dark-bg border border-white/10 text-white placeholder-gray-500 text-sm focus:outline-none focus:border-brand-400 transition-colors"></textarea>
+                </div>
+
+                <div id="form-feedback" class="hidden text-xs py-2 px-3 rounded-lg text-emerald-400 bg-emerald-500/10 border border-emerald-500/20">
+                    <i class="fa-solid fa-circle-check mr-1"></i> Message sent successfully! Ahmadh H will get back to you soon.
+                </div>
+
+                <button type="submit" class="w-full py-3.5 rounded-xl bg-gradient-to-r from-brand-400 to-amber-500 text-black font-bold text-sm shadow-lg shadow-brand-400/20 hover:scale-[1.01] active:scale-95 transition-all">
+                    Submit Message
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <!-- 22. FOOTER SECTION -->
+    <footer class="border-t border-dark-border bg-dark-bg/90 relative z-10 py-12 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-8">
+            <!-- Brand -->
+            <div class="flex items-center gap-3">
+                <div class="w-9 h-9 rounded-xl bg-gradient-to-br from-brand-400 to-brand-700 flex items-center justify-center font-display font-bold text-black text-lg shadow-md shadow-brand-400/10">
+                    A
+                </div>
+                <div>
+                    <span class="font-display font-bold text-white text-base block">Ahmadh H</span>
+                    <span class="text-[11px] text-gray-400 block">Businessman • Entrepreneur • Vision Builder</span>
+                </div>
+            </div>
+
+            <!-- Navigation Links -->
+            <div class="flex flex-wrap justify-center gap-6 text-xs font-medium text-gray-400">
+                <a href="#home" class="hover:text-brand-400 transition-colors">Home</a>
+                <a href="#about" class="hover:text-brand-400 transition-colors">About</a>
+                <a href="#experience" class="hover:text-brand-400 transition-colors">Experience</a>
+                <a href="#skills" class="hover:text-brand-400 transition-colors">Skills</a>
+                <a href="#strengths" class="hover:text-brand-400 transition-colors">Strengths</a>
+                <a href="#mindset" class="hover:text-brand-400 transition-colors">Mindset</a>
+                <a href="#beyond-business" class="hover:text-brand-400 transition-colors">Beyond Business</a>
+                <a href="#vision" class="hover:text-brand-400 transition-colors">Vision</a>
+                <a href="#contact" class="hover:text-brand-400 transition-colors">Contact</a>
+            </div>
+
+            <!-- Copyright -->
+            <div class="text-xs text-gray-500 font-normal">
+                &copy; 2026 Ahmadh H. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript Application Logic -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // 1. BACKGROUND PARTICLE CANVAS ANIMATION
+            const canvas = document.getElementById('bg-canvas');
+            const ctx = canvas.getContext('2d');
+            let width, height;
+            let particles = [];
+
+            function resizeCanvas() {
+                width = canvas.width = window.innerWidth;
+                height = canvas.height = window.innerHeight;
+            }
+            window.addEventListener('resize', resizeCanvas);
+            resizeCanvas();
+
+            class Particle {
+                constructor() {
+                    this.reset();
+                }
+                reset() {
+                    this.x = Math.random() * width;
+                    this.y = Math.random() * height;
+                    this.vx = (Math.random() - 0.5) * 0.4;
+                    this.vy = (Math.random() - 0.5) * 0.4;
+                    this.radius = Math.random() * 1.5 + 0.5;
+                    this.alpha = Math.random() * 0.5 + 0.1;
+                }
+                update() {
+                    this.x += this.vx;
+                    this.y += this.vy;
+                    if (this.x < 0 || this.x > width) this.vx *= -1;
+                    if (this.y < 0 || this.y > height) this.vy *= -1;
+                }
+                draw() {
+                    ctx.beginPath();
+                    ctx.arc(this.x, this.y, this.radius, 0, Math.PI * 2);
+                    ctx.fillStyle = `rgba(212, 175, 55, ${this.alpha})`;
+                    ctx.fill();
+                }
+            }
+
+            // Create particles
+            const particleCount = Math.min(Math.floor(window.innerWidth / 20), 40);
+            for (let i = 0; i < particleCount; i++) {
+                particles.push(new Particle());
+            }
+
+            function animateCanvas() {
+                ctx.clearRect(0, 0, width, height);
+                
+                // Draw connecting constellation lines
+                for (let i = 0; i < particles.length; i++) {
+                    for (let j = i + 1; j < particles.length; j++) {
+                        const dx = particles[i].x - particles[j].x;
+                        const dy = particles[i].y - particles[j].y;
+                        const dist = Math.sqrt(dx * dx + dy * dy);
+
+                        if (dist < 120) {
+                            ctx.beginPath();
+                            ctx.moveTo(particles[i].x, particles[i].y);
+                            ctx.lineTo(particles[j].x, particles[j].y);
+                            ctx.strokeStyle = `rgba(212, 175, 55, ${0.15 * (1 - dist / 120)})`;
+                            ctx.lineWidth = 0.6;
+                            ctx.stroke();
+                        }
+                    }
+                }
+
+                particles.forEach(p => {
+                    p.update();
+                    p.draw();
+                });
+
+                requestAnimationFrame(animateCanvas);
+            }
+            animateCanvas();
+
+            // 2. SCROLL PROGRESS BAR & STICKY NAV COMPACTING
+            const progressBar = document.getElementById('progress-bar');
+            const navbar = document.getElementById('navbar');
+
+            window.addEventListener('scroll', () => {
+                const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+                const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+                const scrolled = (winScroll / height) * 100;
+                progressBar.style.width = scrolled + '%';
+
+                if (window.scrollY > 50) {
+                    navbar.classList.add('py-2', 'shadow-2xl');
+                    navbar.classList.remove('py-4');
+                } else {
+                    navbar.classList.add('py-4');
+                    navbar.classList.remove('py-2', 'shadow-2xl');
+                }
+            });
+
+            // 3. SPOTLIGHT CARD MOUSE TRACKER
+            const spotlightCards = document.querySelectorAll('.spotlight-card');
+            spotlightCards.forEach(card => {
+                card.addEventListener('mousemove', (e) => {
+                    const rect = card.getBoundingClientRect();
+                    const x = e.clientX - rect.left;
+                    const y = e.clientY - rect.top;
+                    card.style.setProperty('--mouse-x', `${x}px`);
+                    card.style.setProperty('--mouse-y', `${y}px`);
+                });
+            });
+
+            // 4. SCROLL REVEAL OBSERVER
+            const observerOptions = {
+                threshold: 0.1,
+                rootMargin: '0px 0px -50px 0px'
+            };
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('is-visible');
+                    }
+                });
+            }, observerOptions);
+
+            document.querySelectorAll('.reveal-on-scroll').forEach(el => observer.observe(el));
+
+            // 5. MOBILE MENU DRAWER TOGGLE
+            const mobileBtn = document.getElementById('mobile-menu-btn');
+            const mobileMenu = document.getElementById('mobile-menu');
+            const menuIcon = document.getElementById('menu-icon');
+
+            mobileBtn.addEventListener('click', () => {
+                const isOpen = !mobileMenu.classList.contains('hidden');
+                if (isOpen) {
+                    mobileMenu.classList.add('hidden');
+                    menuIcon.classList.replace('fa-xmark', 'fa-bars');
+                } else {
+                    mobileMenu.classList.remove('hidden');
+                    menuIcon.classList.replace('fa-bars', 'fa-xmark');
+                }
+            });
+
+            document.querySelectorAll('.mobile-nav-link').forEach(link => {
+                link.addEventListener('click', () => {
+                    mobileMenu.classList.add('hidden');
+                    menuIcon.classList.replace('fa-xmark', 'fa-bars');
+                });
+            });
+
+            // 6. SYNTH AUDIO MELODY FOR SINGING HOBBY (Web Audio API - Pure & Clean)
+            const audioBtn = document.getElementById('synth-sound-btn');
+            const waveContainer = document.getElementById('audio-wave-container');
+
+            function playHarmonicMelody() {
+                try {
+                    const AudioContext = window.AudioContext || window.webkitAudioContext;
+                    if (!AudioContext) return;
+                    const audioCtx = new AudioContext();
+
+                    // Pentatonic warm notes sequence (A4, B4, C#5, E5, F#5)
+                    const notes = [440, 493.88, 554.37, 659.25, 739.99, 880];
+                    notes.forEach((freq, index) => {
+                        const osc = audioCtx.createOscillator();
+                        const gain = audioCtx.createGain();
+
+                        osc.type = 'sine';
+                        osc.frequency.setValueAtTime(freq, audioCtx.currentTime + index * 0.15);
+
+                        gain.gain.setValueAtTime(0, audioCtx.currentTime + index * 0.15);
+                        gain.gain.linearRampToValueAtTime(0.08, audioCtx.currentTime + index * 0.15 + 0.05);
+                        gain.gain.exponentialRampToValueAtTime(0.001, audioCtx.currentTime + index * 0.15 + 0.5);
+
+                        osc.connect(gain);
+                        gain.connect(audioCtx.destination);
+
+                        osc.start(audioCtx.currentTime + index * 0.15);
+                        osc.stop(audioCtx.currentTime + index * 0.15 + 0.6);
+                    });
+                } catch (e) {
+                    console.log('Audio playback prevented');
+                }
+            }
+
+            audioBtn.addEventListener('click', playHarmonicMelody);
+            waveContainer.addEventListener('click', playHarmonicMelody);
+
+            // 7. CONTACT MODAL DIALOG CONTROLS
+            const openModalBtn = document.getElementById('open-contact-modal');
+            const closeModalBtn = document.getElementById('close-modal');
+            const contactModal = document.getElementById('contact-modal');
+            const modalContainer = document.getElementById('modal-container');
+            const connectForm = document.getElementById('connect-form');
+            const formFeedback = document.getElementById('form-feedback');
+
+            function openModal() {
+                contactModal.classList.remove('opacity-0', 'pointer-events-none');
+                modalContainer.classList.remove('scale-95');
+                modalContainer.classList.add('scale-100');
+            }
+
+            function closeModal() {
+                contactModal.classList.add('opacity-0', 'pointer-events-none');
+                modalContainer.classList.remove('scale-100');
+                modalContainer.classList.add('scale-95');
+                formFeedback.classList.add('hidden');
+            }
+
+            openModalBtn.addEventListener('click', openModal);
+            closeModalBtn.addEventListener('click', closeModal);
+
+            contactModal.addEventListener('click', (e) => {
+                if (e.target === contactModal) closeModal();
+            });
+
+            connectForm.addEventListener('submit', (e) => {
+                e.preventDefault();
+                formFeedback.classList.remove('hidden');
+                setTimeout(() => {
+                    connectForm.reset();
+                    closeModal();
+                }, 2200);
+            });
+        });
+    </script>
+</body>
+</html>
